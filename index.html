@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxflow</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #000000;
+    }
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding:100px;
+    /* background-color: #fff; */
+}
+
+.about-text {
+    width: 50%;
+    max-width:40.5em;
+    padding-right: 30px;
+}
+
+.about-text h2{
+    color: #FFFFFF;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-text h4{
+    color: #D8B675;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-text h4 img{
+    width: 40px;
+    vertical-align: sub;
+    padding-right: 5px;
+}
+
+.about-text p{
+    color: #E0E0E0;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 88%;
+}
+
+.about-text ul li{
+    color: #D8B675;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 16px;
+    padding-bottom: 7px;
+}
+
+.about-text ul {
+  margin: 30px;
+  list-style-image: url('img/checked.png');
+}
+
+.about-image{
+    position: relative;
+    width: 50%;
+}
+.about-image .floatingAboutImg{
+    position: absolute;
+    width: 60%;
+    left: -60px;
+    bottom: 0;
+}
+
+.about-image img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.featureBoxes{
+    display: flex;
+    padding: 0px 40px 100px;
+}
+
+.featureBox{
+    background-color:#D8B675 ;
+    margin: 20px;
+    padding: 30px 20px 30px 30px;
+    border-radius: 3px;
+    width: 20%;
+    height: 170px;
+}
+
+.featureBox:hover{
+    background-color: #e0e0e0;
+}
+
+.featureBox img{
+    width: 50px;
+    margin-bottom: 12px;
+}
+
+.featureBox h4{
+    font-size: 14px;
+}
+
+.features {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.features h2{
+    color: #FFFFFF;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.features h4{
+    color: #D8B675;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.features h4 img{
+    width: 40px;
+    vertical-align: sub;
+    padding-right: 5px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.card {
+    background-color: #333;
+    padding: 40px;
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.card:hover{
+    border: 1px solid #D8B675;
+}
+
+.card h3{
+    font-family: "Space Grotesk", Sans-serif;
+    color: #D8B675 ;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.card p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-top:15px;
+    text-align: justify;
+}
+
+.whyChooseUs {
+    /* background-color: #fff; */
+    padding: 90px;
+    text-align: center;
+    justify-content: center;
+    }
+
+.whyChooseUs h2{
+    color: #FFFFFF;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.whyChooseUs h4{
+    color: #D8B675;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.whyChooseUs h4 img{
+    width: 40px;
+    vertical-align: sub;
+    padding-right: 5px;
+}
+
+.whyChooseUsGrid{
+    display: grid;
+    width: 1200px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.whyChooseUsBox{
+
+    /* background-color: #fff; */
+}
+
+.whyChooseUsBox h5{
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.whyChooseUsBox p{
+    font-size: 14px;
+
+}
+
+.gridItemOne{
+    width: 600px;
+    height: 200px;
+    padding: 20px;
+    text-align: left;
+    grid-column: 1 / 3;
+}
+
+.gridItemTwo{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    background-color:#D8B675;
+    color: white;
+    }
+.gridItemThree{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    background-image: url(img/sanitary-ware-img.jpg);
+    background-size: cover;
+}
+.gridItemFour{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    background-image: url(img/sanitary-ware-img-1.jpg);
+    background-size: cover;
+}
+.gridItemFive{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    background-color:#D8B675;
+    color: white;
+}
+.gridItemSix{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    background-image: url(img/sanitary-ware-img-2.jpg);
+    background-size: cover;
+ }
+.gridItemSeven{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    background-color:#D8B675;
+    color: white;
+}
+.gridItemEight{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    background-color:#D8B675;
+    color: white;
+}
+.gridItemNine{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    background-image: url(img/sanitary-ware-img-3.jpg);
+    background-size: cover;
+}
+.gridItemTen{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    align-self: center;
+    background-color:#D8B675;
+    color: white;
+}
+.gridItemEleven{
+    width: 300px;
+    height: 200px;
+    padding: 45px;
+    background-image: url(img/sanitary-ware-img-4.jpg);
+    background-size: cover;
+}
+
+#productsTitle{
+  color: white;
+  font-size:24px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 30px;
+}
+
+#productsTitle img{
+  margin: 10px;
+  width: 40px;
+}
+
+.products{
+  /* border: 1px solid red; */
+  display:flex;
+  justify-content:space-evenly;
+
+}
+
+.productBox{
+  height: 400px;
+  cursor: pointer;
+}
+
+.product{
+  width:160px;  
+  height: 160px; 
+  transition: transform .5s;
+}
+
+.product:hover{
+    transform: scale(1.3);
+}
+
+.productTitle{
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.productTitle:hover{
+    color: #D8B675;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<section class="about">
+    <div class="about-text">
+      <h4>
+        <span><img src="img/abstract-shape.png" alt="" /></span>ABOUT US
+      </h4>
+      <h2>Excellence in Tile Manufacturing and Exporting</h2>
+      <p>
+        We believe the bathroom should be a sanctuary, a place where you can
+        unwind and recharge. That’s why we offer a curated collection of
+        elegant toilets and wash basins, designed to seamlessly blend luxury
+        with functionality.
+      </p>
+      <ul>
+        <li>Sophisticated Design</li>
+        <li>Unparalleled Comfort</li>
+        <li>Effortless Functionality</li>
+        <li>A Touch of Brilliance</li>
+      </ul>
+    </div>
+    <div class="about-image">
+      <img
+        src="img/small-bathroom-with-modern-style-ai-generated.jpg"
+      />
+      <img
+        src="img/elegant-marble-bathroom-with-golden-accents-bright-natural-light_38013-106559.jpg"
+        class="floatingAboutImg"
+      />
+    </div>
+  </section>
+
+  <section class="featureBoxes">
+    <div class="featureBox">
+      <img src="img/weight-test.png" />
+      <h4>All seats and covers are subjected to a weight test</h4>
+    </div>
+    <div class="featureBox">
+      <img src="img/open-close-test.png" />
+      <h4>All seats and covers are subjected to an open/close test</h4>
+    </div>
+    <div class="featureBox">
+      <img src="img/space-for-bottom-cleaning.png" />
+      <h4>Requires very little space and provides easy bottom Cleaning</h4>
+    </div>
+    <div class="featureBox">
+      <img src="img/water-save.png" />
+      <h4>Saves water with only 1 Ltr of water consumption</h4>
+    </div>
+    <div class="featureBox">
+      <img src="img/smell-proof.png" />
+      <h4>All WC pans are subjected to an odor leakage test</h4>
+    </div>
+  </section>
+
+  <section class="features">
+    <h4>
+      <span><img src="img/abstract-shape.png" alt="" /></span> ISHA CERACHEM
+    </h4>
+    <h2>Our Principles for Lasting Success</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>Our Vision</h3>
+        <p>
+          To be a global leader in the sanitary ware industry by consistently
+          delivering innovative, sustainable, and high-quality bathroom
+          solutions that enhance everyday living and contribute to a healthier
+          planet.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Our Values</h3>
+        <p>
+          Our values are built on a foundation of quality, ensuring top-notch
+          products that meet international standards. We embrace innovation to
+          deliver modern and efficient solutions. Sustainability is at the
+          heart of our operations, with eco-friendly practices guiding our
+          manufacturing.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>
+          To deliver high-quality sanitary ware products that combine design,
+          durability, and environmental responsibility, while exceeding
+          customer expectations and fostering lasting relationships.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="whyChooseUs">
+    <div class="whyChooseUsGrid">
+      <div class="whyChooseUsBox gridItemOne">
+        <h4>
+          <span><img src="img/abstract-shape.png" alt="" /></span> WHY CHOOSE
+          US
+        </h4>
+        <h2>Discover Why We're the Preferred Choice"</h2>
+      </div>
+      <div class="whyChooseUsBox gridItemTwo">
+        <h5>UNCOMPRIMISED QUALITY</h5>
+        <p>
+          We adhere to international standards, ensuring each product is
+          manufactured with high-grade materials for long-lasting performance.
+        </p>
+
+        <p></p>
+      </div>
+
+      <div class="whyChooseUsBox gridItemThree"></div>
+
+      <div class="whyChooseUsBox gridItemFour"></div>
+
+      <div class="whyChooseUsBox gridItemFive">
+        <h5>Innovative Design</h5>
+        <p>
+          Our products are not just functional but also visually appealing,
+          with designs that suit both contemporary and traditional bathrooms.
+        </p>
+        <p></p>
+      </div>
+
+      <div class="whyChooseUsBox gridItemSix"></div>
+
+      <div class="whyChooseUsBox gridItemSeven">
+        <h5>Sustainability Focused</h5>
+        <p>
+          With eco-friendly production methods and water-efficient products,
+          we contribute to sustainability while reducing water consumption.
+        </p>
+        <p></p>
+      </div>
+
+      <div class="whyChooseUsBox gridItemEight">
+        <h5>Global Reach</h5>
+        <p>
+          As an experienced exporter, we have successfully delivered our
+          sanitary ware products to clients across various countries, ensuring
+          timely and efficient logistics.
+        </p>
+        <p></p>
+      </div>
+
+      <div class="whyChooseUsBox gridItemNine"></div>
+
+      <div class="whyChooseUsBox gridItemTen">
+        <h5>Customer-Centric Approach</h5>
+        <p>
+          We work closely with our customers, providing customized solutions
+          to meet specific design requirements and preferences.
+        </p>
+        <p></p>
+      </div>
+
+      <div class="whyChooseUsBox gridItemEleven"></div>
+    </div>
+  </section>
+  
+   <!--our products-->
+  
+  <section><h4 id="productsTitle"> <span><img src="img/substract.png"> </span> OUR PRODUCTS <span><img src="img/substract.png"> </span>  </h4></section>
+  <section class="products">
+    <div class="productBox">
+      <img class="product" src="img/sanitary-ware.png" />
+      <h4 class="productTitle">Toilets</h4>
+    </div>
+    <div class="productBox">
+      <img class="product" src="img/kitchen-sink.png " />
+      <h4 class="productTitle">Kitchen Sink</h4>
+    </div>
+    <div class="productBox">
+      <img class="product" src="img/basin.png " />
+      <h4 class="productTitle">BASIN</h4>
+    </div>
+    <div class="productBox">
+      <img class="product" src="img/urinals.png " />
+      <h4 class="productTitle">Urinals</h4>
+    </div>
+    <div class="productBox">
+      <img class="product" src="img/bathtub.png " />
+      <h4 class="productTitle">Bathtub</h4>
+    </div>
+    
+  </section>
+</body>
+</html>
